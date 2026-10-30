@@ -2,11 +2,11 @@
 
 ![version](https://img.shields.io/badge/version-26.10.03-blue) ![license](https://img.shields.io/badge/license-MIT-green)
 
-_Add a one-paragraph description of what this app does._
+GS Notes
 
 ## Features
 
-_List the main features here._
+<!-- MGP-TODO: list the main features here -->
 
 ## Requirements
 
@@ -16,7 +16,7 @@ _List the main features here._
 ## Installation
 
 ```bash
-git clone <repo-url>.git
+git clone https://github.com/gstvslzr/GSNotes.git
 cd GSNotes
 python3 -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt  # if present
@@ -28,7 +28,7 @@ npm ci
 
 ## Usage
 
-_Describe how to use the app (screenshots help)._
+<!-- MGP-TODO: how to use it: main actions and options (a screenshot helps) -->
 
 ## Changelog
 
