@@ -4,7 +4,7 @@
   "description": "GS Notes",
   "license": "MIT",
   "author": "Gustavo Salazar",
-  "visibility": "private",
+  "visibility": "public",
   "version": "26.10.4",
   "topics": [
     "Note App"
@@ -14,5 +14,6 @@
   "ai_assisted": true,
   "spdx_headers": true,
   "online_lookup": true,
-  "api_url": ""
+  "api_url": "",
+  "docs_strict": false
 }
