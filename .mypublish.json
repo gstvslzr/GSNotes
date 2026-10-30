@@ -1,0 +1,18 @@
+{
+  "name": "",
+  "owner": "",
+  "description": "Profesional Notebook Manager",
+  "license": "MIT",
+  "author": "Gustavo Salazar",
+  "visibility": "private",
+  "version": "26.10.03",
+  "topics": [
+    "Note Manager"
+  ],
+  "release_assets": [],
+  "security_contact": "",
+  "ai_assisted": true,
+  "spdx_headers": true,
+  "online_lookup": true,
+  "api_url": ""
+}

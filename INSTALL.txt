@@ -1,0 +1,66 @@
+MyGSNotes+ 26.10.03 for Linux — How to install
+© 2026 Gustavo Salazar. All rights reserved.
+
+Works on: Ubuntu, Linux Mint, Debian, Pop!_OS, Zorin and other apt-based
+systems, 64-bit Intel/AMD.
+
+-----------------------------------------------------------------
+INSTALL (about 1 minute)
+-----------------------------------------------------------------
+1. Download these 6 files into ONE folder (your Downloads folder is fine):
+     mygsnotes-setup.sh
+     mygsnotes-plus_26.10.03_amd64.deb.part0
+     mygsnotes-plus_26.10.03_amd64.deb.part1
+     mygsnotes-plus_26.10.03_amd64.deb.part2
+     mygsnotes-plus_26.10.03_amd64.deb.part3
+     mygsnotes-plus_26.10.03_amd64.deb.part4
+   If your browser renames a file, for example "mygsnotes-setup (1).sh",
+   delete the older copy and remove " (1)" from the name.
+
+2. Open a terminal in that folder. In the Files app, right-click an empty
+   spot in the folder and choose "Open in Terminal", or type:
+     cd ~/Downloads
+
+3. Run (as yourself, without sudo):
+     bash mygsnotes-setup.sh
+
+   Type your password when asked. It joins the parts, checks they downloaded
+   correctly, installs the app, repairs permissions, then starts MyGSNotes+
+   and confirms its window opens. The first line it prints is
+   "MyGSNotes+ 26.10.03 installer".
+
+-----------------------------------------------------------------
+OPEN THE APP
+-----------------------------------------------------------------
+- App menu: press the Super (Windows) key, type MyGSNotes+, and click the icon.
+  Right-click the icon and choose "Pin to Dock" or "Add to Favorites" to keep it there.
+- Terminal: mygsnotes-plus
+- Inside the app, press F1 for Help.
+
+-----------------------------------------------------------------
+CHECK, UPDATE, UNINSTALL
+-----------------------------------------------------------------
+  bash mygsnotes-setup.sh check       checks everything and tests that the window opens
+  bash mygsnotes-setup.sh             installs a newer version (your notes stay)
+  bash mygsnotes-setup.sh uninstall   removes the app; notes in ~/.config/MyGSNotesPlus
+                                      are kept unless you type DELETE
+
+-----------------------------------------------------------------
+IF THE APP DOES NOT APPEAR
+-----------------------------------------------------------------
+Run:  bash mygsnotes-setup.sh check
+It saves ~/mygsnotes-verify-report.txt; each ✘ line says how to fix it.
+- Never start MyGSNotes+ with sudo. It makes the settings folder belong to
+  root and the app then cannot open. Running the setup again repairs it.
+- Safe mode (no graphics acceleration, uses X11/XWayland): right-click the
+  MyGSNotes+ icon → Safe mode, or run:  mygsnotes-plus --safe-mode
+- Running mygsnotes-plus in a terminal prints [MyGSNotes+] lines that show
+  how far start-up got.
+
+-----------------------------------------------------------------
+IF THE SETUP STOPS
+-----------------------------------------------------------------
+It stops at the step that failed and says why. The usual causes:
+- "Missing: partN": download that part into the same folder.
+- "Checksum does not match": a part did not finish downloading. Download the parts again.
+- "apt could not install": run  sudo apt-get -f install  and then the setup again.
