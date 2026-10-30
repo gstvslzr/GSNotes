@@ -24,3 +24,16 @@ desktop.ini
 *.tmp
 # --- MyGitPublisher state ---
 .mypublish/
+# --- node ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+dist/
+# --- python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+build/

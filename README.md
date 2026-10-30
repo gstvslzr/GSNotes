@@ -2,15 +2,29 @@
 
 ![version](https://img.shields.io/badge/version-26.10.03-blue) ![license](https://img.shields.io/badge/license-MIT-green)
 
-Profesional Notebook Manager
+_Add a one-paragraph description of what this app does._
 
 ## Features
 
 _List the main features here._
 
+## Requirements
+
+- Python 3.10+
+- Node.js (LTS)
+
 ## Installation
 
-_Describe installation._
+```bash
+git clone <repo-url>.git
+cd GSNotes
+python3 -m venv .venv && . .venv/bin/activate
+pip install -r requirements.txt  # if present
+```
+
+```bash
+npm ci
+```
 
 ## Usage
 
@@ -23,6 +37,10 @@ See [CHANGELOG.md](CHANGELOG.md).
 ## Security
 
 See [SECURITY.md](SECURITY.md) to report a vulnerability.
+
+## Development note
+
+Portions of this project were developed with AI assistance (Claude by Anthropic) and reviewed by the author.
 
 ## License
 

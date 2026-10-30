@@ -1,0 +1,27 @@
+<!-- SPDX-License-Identifier: MIT -->
+<!-- SPDX-FileCopyrightText: 2026 Gustavo Salazar -->
+<title>GSNotes</title>
+<meta name="description" content="GSNotes — private, offline-first Markdown notes.">
+<meta name="theme-color" content="#2547c9">
+<!--PWA_HEAD-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/*STYLE*/
+</style>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+
+<div class="app" id="app" data-pane="list">
+  <aside class="rail" id="rail" aria-label="Navigation"></aside>
+  <section class="list" id="list" aria-label="Notes"></section>
+  <main class="editor" id="editor" aria-label="Editor"></main>
+  <section class="view" id="view" aria-label="View"></section>
+</div>
+<div id="overlay"></div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+<script>
+/*SCRIPT*/
+</script>

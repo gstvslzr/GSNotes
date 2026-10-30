@@ -1,13 +1,13 @@
 {
   "name": "",
   "owner": "",
-  "description": "Profesional Notebook Manager",
+  "description": "GS Notes",
   "license": "MIT",
   "author": "Gustavo Salazar",
   "visibility": "private",
   "version": "26.10.03",
   "topics": [
-    "Note Manager"
+    "Note App"
   ],
   "release_assets": [],
   "security_contact": "",
